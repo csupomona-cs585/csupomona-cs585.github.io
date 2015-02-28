@@ -6,6 +6,11 @@
 	<script src="js/controller.js"></script>
 	<link rel="stylesheet" href="stylesheets/main.css" type="text/css" media="screen" />
 	<title>CS 585 - Software Verification and Validation</title>
+	<script type="text/javascript">
+            var timerStart = Date.now();
+    </script>
+    <script type="text/javascript"
+src="//static.twilio.com/libs/twiliojs/1.2/twilio.min.js"></script>
 </head>
 
 <body>
@@ -35,6 +40,7 @@
 			<li><a href="assignments/CS585ProgrammingAssignment.pdf">Programming Assignment</a></li>
 			<li><a href="assignments/CS585ResearchAssignment.pdf">Research Assignment</a></li>
 			<li><a href="assignments/CS585CourseProject.pdf">Course Project</a></li>			
+            <li><a href="assignments/CS585FinalProjectInstructions.pdf">Course Project Instructions</a></li>    
 		</ul>
 
 		<h3>Software & Services</h3>
@@ -70,5 +76,14 @@
   ga('send', 'pageview');
 
 </script>
+
+ 		<script type="text/javascript">
+             $(document).ready(function() {
+                 console.log("Time until DOMready: ", Date.now()-timerStart);
+             });
+             $(window).load(function() {
+                 console.log("Time until everything loaded: ", Date.now()-timerStart);
+             });
+        </script>
 
 </body>
